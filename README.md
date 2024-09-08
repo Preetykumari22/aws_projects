@@ -1,7 +1,7 @@
 # aws_projects
-This project is a versatile Python script designed to perform a wide range of tasks using various external libraries and services.
+This project is a versatile Python script designed to perform a wide range of tasks using various external libraries and services.  
 
-#Features
+#Features  
 Here is the full list of functionalities:
 
 1 Text-to-Speech: Print any text and have it spoken aloud using pyttsx3.  
