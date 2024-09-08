@@ -4,7 +4,7 @@ This project is a versatile Python script designed to perform a wide range of ta
 #Features
 Here is the full list of functionalities:
 
-1 Text-to-Speech: Print any text and have it spoken aloud using pyttsx3.
+1 Text-to-Speech: Print any text and have it spoken aloud using pyttsx3.  
 2 Google Search: Search for the top 5 results on Google using googlesearch.
 3 Send WhatsApp Message: Send a WhatsApp message using Twilio.
 4 Send SMS: Send a text message using Twilio.
