@@ -50,39 +50,39 @@ def search_query():
       print(result)
     
 def whatsapp():
-    account_sid = 'AC844e4e18de113b549745e761930e0f83'
-    auth_token = '0474d1a5fea2db8386bc42a7699e8e99'
+    account_sid = '#acc_sid'
+    auth_token = '#token'
     client = Client(account_sid, auth_token)
     message = client.messages.create(
     body='Hello preety',
-    from_='whatsapp:+14155238886',
-    to='whatsapp:+918709554389'
+    from_='whatsapp:+14.....',
+    to='whatsapp:+91.....'
 )
 
     print(message.sid)
     print("message sent successfully!!")
     
 def message():
-    account_sid = 'AC844e4e18de113b549745e761930e0f83'
-    auth_token = '0474d1a5fea2db8386bc42a7699e8e99'
+    account_sid = 'acc_sid'
+    auth_token = 'token'
     client = Client(account_sid, auth_token)
     message = client.messages.create(
     body='Hello preety, this is a test sms!',
-    from_='+12054059248',
-    to='+918709554389'
+    from_='+12..',
+    to='+91....'
 )
 
     print(message.sid)
     print("message sent successfully!!")
     
 def call():
-    account_sid = 'AC844e4e18de113b549745e761930e0f83'
-    auth_token = '0474d1a5fea2db8386bc42a7699e8e99'
+    account_sid = 'acc_sid'
+    auth_token = 'token'
     client = Client(account_sid, auth_token)
     call = client.calls.create(
     twiml='<Response><Say>Hello, this is a test call from Twilio!</Say></Response>',
-    from_='+1 205 405 9248',
-    to='+918709554389'
+    from_='+1 .....',
+    to='+91.....'
 )
 
     print(call.sid)
@@ -143,9 +143,9 @@ def email():
     # Replace the following with your details
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
-    sender_email = 'preetyprincess2212@gmail.com'
-    sender_password = 'xsum hgtk poqm font'
-    recipient_email = 'preety04fe@gmail.com'
+    sender_email = 'mail@gmail.com'
+    sender_password = '......'
+    recipient_email = 'mail@gmail.com'
     subject = 'Subject of the Email'
     body = 'This is the body of the email.'
 
@@ -179,9 +179,9 @@ def schedule_email():
 
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
-    sender_email = 'preetyprincess2212@gmail.com'
-    sender_password = 'xsum hgtk poqm font'
-    recipient_email = 'preety04fe@gmail.com'
+    sender_email = 'mail@gmail.com'
+    sender_password = '.....'
+    recipient_email = 'mail@gmail.com'
     subject = 'Subject of the Email'
     body = 'This is the body of the email.'
 
@@ -244,8 +244,8 @@ def filter_image():
             
             
 def insta():
-    USERNAME = 'cloud.learner'
-    PASSWORD = 'Preety@123'
+    USERNAME = '#username'
+    PASSWORD = '......'
     IMAGE_PATH = r'C:\Users\HP\Downloads\world.jpeg'
     CAPTION = 'I posted this image using python'
 
@@ -306,8 +306,8 @@ def launch_ec2_instance():
     ec2 = boto3.resource(
         'ec2',
         region_name='us-east-1',  # Specify your region
-        aws_access_key_id='AKIAQYEI45ZJQVU2VMHI',  # Replace with your actual access key ID
-        aws_secret_access_key='PCIkjc6LiYPLRrgvamNFu/LKCVpRRJc9nBI4WZLG'  # Replace with your actual secret access key
+        aws_access_key_id='#access_key',  # Replace with your actual access key ID
+        aws_secret_access_key='secret_key'  # Replace with your actual secret access key
     )
     try:
         instances = ec2.create_instances(
@@ -327,8 +327,8 @@ def launch_rhel_instance():
     ec2 = boto3.resource(
         'ec2',
         region_name='us-east-1',  # Replace with your desired AWS region
-        aws_access_key_id='AKIAQYEI45ZJQVU2VMHI',  # Replace with your Access Key ID
-        aws_secret_access_key='PCIkjc6LiYPLRrgvamNFu/LKCVpRRJc9nBI4WZLG'  # Replace with your Secret Access Key
+        aws_access_key_id='........',  # Replace with your Access Key ID
+        aws_secret_access_key='..........'  # Replace with your Secret Access Key
     )
     try:
         instances = ec2.create_instances(
@@ -376,7 +376,7 @@ def fetch_log_events(log_group_name, log_stream_name):
 def start_transcription(event):
     try:
         # Define the AWS region, S3 bucket, and file key
-        bucket_name = 'hellobucket99'  # Replace with your actual bucket name
+        bucket_name = '#bucket_name'  # Replace with your actual bucket name
         object_key = 'hi.mp3.opus'     # Replace with the actual object key
         region_name = 'us-east-1'              # Replace with the correct S3 bucket region
 
@@ -384,8 +384,8 @@ def start_transcription(event):
         transcribe_client = boto3.client(
             'transcribe',
             region_name=region_name,
-            aws_access_key_id='AKIAQYEI45ZJQVU2VMHI',  # Replace with your access key
-            aws_secret_access_key='PCIkjc6LiYPLRrgvamNFu/LKCVpRRJc9nBI4WZLG'  # Replace with your secret key
+            aws_access_key_id='.....',  # Replace with your access key
+            aws_secret_access_key='........'  # Replace with your secret key
         )
         # Create a unique job name using the current timestamp
         timestamp = int(time.time())
@@ -442,7 +442,7 @@ def lambda_handler(event, context):
     try:
         
         # Get the MongoDB URI from environment variables
-        mongo_uri = os.getenv('mongodb+srv://preetyprincess2212:preetyprincess2212@cluster0.wxgls.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+        mongo_uri = os.getenv('mongodb+srv://preetyprincess2212:dhsjddhfjh@cluster0.wxgls.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
         # Connect to MongoDB
         client = pymongo.MongoClient(mongo_uri)
         print("Connected to MongoDB successfully!")
@@ -497,14 +497,14 @@ def upload_file_to_s3(file_path, bucket_name, object_name=None):
     """
     # If S3 object_name was not specified, use file_path
     if object_name is None:
-        object_name = r'C:\Users\HP\Documents\New folder\link.txt'
+        object_name = r'C:\Users\HP\Documents\link.txt'
 
     # Initialize S3 client with explicit credentials (not recommended for production)
     s3_client = boto3.client(
         's3',
         region_name='us-east-1',  # Replace with your AWS region
-        aws_access_key_id='AKIAQYEI45ZJQVU2VMHI',  # Replace with your Access Key ID
-        aws_secret_access_key='PCIkjc6LiYPLRrgvamNFu/LKCVpRRJc9nBI4WZLG'    # Replace with your AWS secret key
+        aws_access_key_id='......',  # Replace with your Access Key ID
+        aws_secret_access_key='.........'    # Replace with your AWS secret key
     )
 
 
