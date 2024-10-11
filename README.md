@@ -1,6 +1,10 @@
 # aws_projects
 This project is a versatile Python script designed to perform a wide range of tasks using various external libraries and services.  
 
+
+https://github.com/user-attachments/assets/95830177-3f0b-4f10-9242-cea4f9387141
+
+
 #Features  
 Here is the full list of functionalities:
 
